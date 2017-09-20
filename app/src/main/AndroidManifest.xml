@@ -16,6 +16,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".courses" />
+        <activity android:name=".information"></activity>
     </application>
 
 </manifest>

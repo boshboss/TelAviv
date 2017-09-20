@@ -27,5 +27,9 @@ Button btcourse,btinfo,btregister;
             Intent i=new Intent(this,courses.class);
             startActivity(i);
         }
+        if(v==btinfo){
+            Intent i=new Intent(this,information.class);
+            startActivity(i);
+        }
     }
 }

@@ -9,12 +9,14 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
-    tools:context="com.example.hp1.telaviv.courses">
+    tools:context="com.example.hp1.telaviv.courses"
+    android:weightSum="1">
 
     <ListView
         android:layout_width="match_parent"
         android:layout_height="221dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/lv1" />
+        android:id="@+id/lv1"
+        android:layout_weight="0.09" />
 </LinearLayout>
