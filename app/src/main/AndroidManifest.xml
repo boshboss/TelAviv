@@ -16,7 +16,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".courses" />
-        <activity android:name=".information"></activity>
+        <activity android:name=".information" />
+        <activity android:name=".registration" />
+        <activity android:name=".thankyou"></activity>
     </application>
 
 </manifest>

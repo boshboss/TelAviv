@@ -31,5 +31,10 @@ Button btcourse,btinfo,btregister;
             Intent i=new Intent(this,information.class);
             startActivity(i);
         }
+        if(v==btregister){
+            Intent i=new Intent(this,registration.class);
+            startActivity(i);
+
+        }
     }
 }
