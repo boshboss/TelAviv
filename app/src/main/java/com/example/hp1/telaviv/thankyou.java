@@ -1,12 +1,16 @@
 package com.example.hp1.telaviv;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class thankyou extends AppCompatActivity implements View.OnClickListener{
+import static android.content.DialogInterface.BUTTON_POSITIVE;
+
+public class thankyou extends AppCompatActivity implements View.OnClickListener,DialogInterface.OnClickListener{
     Button back;
 
     @Override
@@ -24,6 +28,31 @@ public class thankyou extends AppCompatActivity implements View.OnClickListener{
             Intent i=new Intent(this,MainActivity.class);
             startActivity(i);
         }
+
+
+    }
+    @Override
+    public void onBackPressed() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage("Are you sure you want to exit?")
+                .setCancelable(false)
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        thankyou.this.finish();
+                    }
+                })
+                .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.cancel();
+                    }
+                });
+        AlertDialog alert = builder.create();
+        alert.show();
+
+    }
+
+    @Override
+    public void onClick(DialogInterface dialogInterface, int i) {
 
     }
 }

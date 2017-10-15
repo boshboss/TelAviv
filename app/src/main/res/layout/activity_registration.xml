@@ -18,12 +18,12 @@
         android:id="@+id/tv1" />
 
     <EditText
+        android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
         android:ems="10"
-        android:id="@+id/email"
-        android:text="xxxxxxxxxxx@gmail.com" />
+        android:hint="xxxxxxxxxxx@gmail.com"
+        android:inputType="textEmailAddress" />
 
     <TextView
         android:text="UserName"
@@ -32,12 +32,12 @@
         android:id="@+id/tv2" />
 
     <EditText
+        android:id="@+id/username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
         android:ems="10"
-        android:id="@+id/username"
-        android:text="xxxxxxxx" />
+        android:hint="xxxxxxxx"
+        android:inputType="textPersonName" />
 
     <TextView
         android:text="password"
@@ -46,12 +46,12 @@
         android:id="@+id/tv3" />
 
     <EditText
+        android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPassword"
         android:ems="10"
-        android:id="@+id/password"
-        android:text="......." />
+        android:hint="......."
+        android:inputType="textPassword" />
 
     <TextView
         android:text="phone number"
@@ -60,12 +60,12 @@
         android:id="@+id/tv4" />
 
     <EditText
+        android:id="@+id/phone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="number"
         android:ems="10"
-        android:id="@+id/phone"
-        android:text="0000000000" />
+        android:hint="0000000000"
+        android:inputType="number" />
 
     <TextView
         android:text="city"
@@ -74,12 +74,12 @@
         android:id="@+id/tv5" />
 
     <EditText
+        android:id="@+id/city"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="xxxxx"
         android:ems="10"
-        android:id="@+id/city" />
+        android:hint="xxxxx"
+        android:inputType="textPersonName" />
 
     <Button
         android:text="Sign Up"
