@@ -24,7 +24,8 @@
         <activity android:name=".Lawyer" />
         <activity android:name=".Teacher" />
         <activity android:name=".Fileread" />
-        <activity android:name=".CourseDetailsActivity"></activity>
+        <activity android:name=".CourseDetailsActivity" />
+        <activity android:name=".Main2Activity"></activity>
     </application>
 
 </manifest>
