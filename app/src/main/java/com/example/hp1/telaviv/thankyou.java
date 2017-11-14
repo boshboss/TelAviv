@@ -8,9 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import static android.content.DialogInterface.BUTTON_POSITIVE;
-
-public class thankyou extends AppCompatActivity implements View.OnClickListener,DialogInterface.OnClickListener{
+public class Thankyou extends AppCompatActivity implements View.OnClickListener,DialogInterface.OnClickListener{
     Button back;
 
     @Override
@@ -38,7 +36,7 @@ public class thankyou extends AppCompatActivity implements View.OnClickListener,
                 .setCancelable(false)
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
-                        thankyou.this.finish();
+                        Thankyou.this.finish();
                     }
                 })
                 .setNegativeButton("No", new DialogInterface.OnClickListener() {

@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class courses extends AppCompatActivity implements AdapterView.OnItemClickListener {
+public class Courses extends AppCompatActivity implements AdapterView.OnItemClickListener {
     ListView lv1;
     ArrayList<String> courses= new ArrayList<String>();
     ArrayAdapter<String> adapter;
@@ -24,8 +24,8 @@ public class courses extends AppCompatActivity implements AdapterView.OnItemClic
         lv1= (ListView) findViewById(R.id.lv1);
         courses.add(new String("Computers"));
         courses.add(new String("Doctor"));
-        courses.add(new String("trash man"));
-        courses.add(new String("teacher"));
+        courses.add(new String("Lawyer"));
+        courses.add(new String("Teacher"));
 
 
         adapter=new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,courses);
@@ -37,7 +37,23 @@ public class courses extends AppCompatActivity implements AdapterView.OnItemClic
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        Intent i=new Intent(this,CourseDetailsActivity.class);
+        if(position == 0){
+            i.putExtra("course","computer");
 
+        }
+        if (position == 1){
+            i.putExtra("course","doctor");
+        }
+        if (position == 2){
+            i.putExtra("course","lawyer");
+
+        }
+        if (position == 3){
+            i.putExtra("course","education");
+
+        }
+        startActivity(i);
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu){

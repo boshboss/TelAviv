@@ -15,10 +15,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".courses" />
-        <activity android:name=".information" />
-        <activity android:name=".registration" />
-        <activity android:name=".thankyou"></activity>
+        <activity android:name=".Courses" />
+        <activity android:name=".Information" />
+        <activity android:name=".Registration" />
+        <activity android:name=".Thankyou" />
+        <activity android:name=".Computers" />
+        <activity android:name=".Doctor" />
+        <activity android:name=".Lawyer" />
+        <activity android:name=".Teacher" />
+        <activity android:name=".Fileread" />
+        <activity android:name=".CourseDetailsActivity"></activity>
     </application>
 
 </manifest>

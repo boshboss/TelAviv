@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class registration extends AppCompatActivity implements View.OnClickListener{
+public class Registration extends AppCompatActivity implements View.OnClickListener{
 Button signup;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +19,7 @@ Button signup;
     @Override
     public void onClick(View v) {
         if(v==signup){
-            Intent i=new Intent(this,thankyou.class);
+            Intent i=new Intent(this,Thankyou.class);
             startActivity(i);
 
         }

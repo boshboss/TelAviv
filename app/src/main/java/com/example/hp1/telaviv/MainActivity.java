@@ -28,15 +28,15 @@ Button btcourse,btinfo,btregister,btphone;
     @Override
     public void onClick(View v) {
         if(v==btcourse){
-            Intent i=new Intent(this,courses.class);
+            Intent i=new Intent(this,Courses.class);
             startActivity(i);
         }
         if(v==btinfo){
-            Intent i=new Intent(this,information.class);
+            Intent i=new Intent(this,Information.class);
             startActivity(i);
         }
         if(v==btregister){
-            Intent i=new Intent(this,registration.class);
+            Intent i=new Intent(this,Registration.class);
             startActivity(i);
 
         }
